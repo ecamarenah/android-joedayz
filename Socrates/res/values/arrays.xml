@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string-array name="aplicaciones">
+        <item>Horarios</item>
+        <item>Notas actuales</item>
+        <item>Reserva de recursos</item>        
+    </string-array>
+    
+    
+    <string-array name="areas">
+        <item>Centro de información</item>
+        <item>Calidad educativa</item>
+        <item>Reserva de computadoras</item>
+        <item>Facultad de ciencias de la comunicación</item>
+        <item>Facultad de negocios</item>        
+    </string-array>
+    
+    <string-array name="modalidades">
+        <item>AC-Pregrado UPC</item>  
+        <item>FC-Estudio profesionales para ejecutivos</item>      
+    </string-array>
+    
+    <string-array name="locales">
+        <item>Campus Monterrico</item>        
+    </string-array>    
+    
+    <string-array name="tipoRecurso">
+        <item>Red inalámbrica</item>        
+        <item>Computadoras UPC</item>
+        <item>Cubiculos UPC</item>
+        <item>Macintosh</item>
+    </string-array>
+    
+    <string-array name="ciclos">
+        <item>20110</item>
+        <item>20111</item>
+        <item>20112</item>        
+    </string-array>
+</resources>

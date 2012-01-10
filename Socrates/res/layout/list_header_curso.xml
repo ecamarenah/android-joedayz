@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"	
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content"	 
+	android:stretchColumns="0"
+	>
+   	<TableRow>   		
+    	<TextView 
+       		android:text="@string/curso_codigo_header" 
+			style="?HeaderCell"
+			/>
+		<TextView
+	       	android:text="@string/curso_nombre_header"
+			style="?HeaderCell"						
+			android:width="220dip"
+			/>
+		<TextView
+	       	android:text="@string/curso_nota_header"
+			style="?HeaderCell"					
+			android:width="40dip"
+			/>		
+	</TableRow>
+</TableLayout>

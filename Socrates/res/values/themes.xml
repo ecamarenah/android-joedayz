@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<style name="Theme" parent="android:Theme">		
+	</style>
+	
+	
+    <style name="Theme.Default">
+		<item name="View">@style/View</item>
+		<item name="Cell">@style/View.Cell</item>
+		<item name="HeaderCell">@style/View.Cell.Header</item>
+	</style>
+	
+	<style name="Theme.Amadeus">
+		<item name="View">@style/View.2</item>
+		<item name="Cell">@style/View.Cell.2</item>
+		<item name="HeaderCell">@style/View.Cell.Header.2</item>
+	</style>
+</resources>

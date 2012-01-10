@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/joedayz/Android/!svn/ver/151/Socrates/src/org/upc/socrates/nota
+END
+BusqCursosActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/joedayz/Android/!svn/ver/151/Socrates/src/org/upc/socrates/nota/BusqCursosActivity.java
+END
+CursosListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/joedayz/Android/!svn/ver/151/Socrates/src/org/upc/socrates/nota/CursosListActivity.java
+END
+CursoAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/joedayz/Android/!svn/ver/151/Socrates/src/org/upc/socrates/nota/CursoAdapter.java
+END
+NotasListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/joedayz/Android/!svn/ver/151/Socrates/src/org/upc/socrates/nota/NotasListActivity.java
+END
+NotaAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/joedayz/Android/!svn/ver/151/Socrates/src/org/upc/socrates/nota/NotaAdapter.java
+END

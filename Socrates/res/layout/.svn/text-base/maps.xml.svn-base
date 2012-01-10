@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+    <com.google.android.maps.MapView 
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:enabled="true"
+        android:clickable="true"
+        android:apiKey="0ZA6IAXVDK4Kp6HPtyx9-zlHaJnHYm3jRB9Jl7Q"
+        />
+<LinearLayout android:id="@+id/zoom" 
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content" 
+       android:layout_alignParentBottom="true" 
+       android:layout_centerHorizontal="true" 
+       />    
+<Button android:id="@+id/cmd_submit"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Show me the Route!"/>
+</RelativeLayout>

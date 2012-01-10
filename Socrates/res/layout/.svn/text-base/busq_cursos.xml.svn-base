@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    >
+<TextView
+  	android:text="@string/curso_modalidad_label"
+  	style="?View"
+  	/>
+<Spinner
+   	android:id="@+id/modalidadSpinner"
+  	style="?View"
+  	/>
+<TextView
+  	android:text="@string/curso_ciclo_label"
+  	style="?View"
+  	/>
+<Spinner
+   	android:id="@+id/cicloSpinner"
+  	style="?View"
+  	/>   	
+<RelativeLayout
+>
+    <Button
+    	android:id="@+id/siguienteButton" 
+    	android:text="@string/siguiente_label"
+        style="?View"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+    	/>    
+</RelativeLayout>
+</LinearLayout>

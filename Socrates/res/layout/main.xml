@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView android:text="@string/usuario_nombre_label" style="?View" />
+	<EditText android:id="@+id/usuarioEditText" style="?View" />
+	<TextView android:text="@string/usuario_password_label" style="?View" />
+	<EditText android:id="@+id/passwordEditText" style="?View"
+		android:inputType="textPassword" />
+	<RelativeLayout android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<Button android:id="@+id/entrarButton" android:text="@string/entrar_label"
+			style="?View" android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true" />
+	</RelativeLayout>
+</LinearLayout>

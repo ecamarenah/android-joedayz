@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"	
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 	 
+	android:stretchColumns="*"
+	>
+	<TableRow>
+		<TextView 
+        	android:id="@+id/horaTextView" 
+			style="?HeaderCell"
+			android:height="@dimen/cell_height2"			
+			/>
+	</TableRow>
+    <TableRow>        
+        <TextView 
+        	android:id="@+id/cursoTextView" 
+			style="?Cell"
+			android:height="@dimen/cell_height2" 			
+			/>
+		<TextView 
+        	android:id="@+id/aulaTextView" 
+			style="?Cell"
+			android:height="@dimen/cell_height2" 
+			/>
+		<TextView 
+        	android:id="@+id/seccionTextView" 
+			style="?Cell"
+			android:height="@dimen/cell_height2"
+			/>
+		<Button 
+        	android:id="@+id/localButton" 
+			style="?Cell"
+			android:height="@dimen/cell_height2"
+			/>
+    </TableRow>    
+</TableLayout>

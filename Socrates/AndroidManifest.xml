@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.upc"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" 
+        android:debuggable="true">
+    	<uses-library android:name="com.google.android.maps" />
+    	<activity android:name=".socrates.MapsActivity" 
+        		  android:label="@string/mapa_title"></activity>
+    
+        <!--  
+    		Inicio
+    	-->
+    	
+        <activity android:name=".socrates.MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".socrates.AplicacionesListActivity"
+                  android:label="@string/aplicaciones_title">
+        </activity>
+        
+        <!-- 
+    		Horarios
+    	-->
+    	
+		<activity android:name=".socrates.horario.HorarioTabActivity"
+                  android:label="@string/horario_title"></activity>
+        <activity android:name=".socrates.horario.HorarioListActivity"></activity>        
+        
+   		<!--
+    		Notas actuales
+    	-->
+    	        
+        <activity android:name=".socrates.nota.BusqCursosActivity"
+                  android:label="@string/busqCursos_title"></activity>
+        <activity android:name=".socrates.nota.CursosListActivity"
+                  android:label="@string/cursos_title"></activity>       
+		<activity android:name=".socrates.nota.NotasListActivity"
+                  android:label="@string/notas_title"></activity>                  
+
+    	<!--
+    		Reserva de recursos
+    	-->
+                   
+        <activity android:name=".socrates.reserva.AreasListActivity"
+                  android:label="@string/areas_title"></activity> 
+        <activity android:name=".socrates.reserva.BusqCentroInfoActivity"
+                  android:label="@string/busqCentroInfo_title"></activity>
+        <activity android:name=".socrates.reserva.RecursosListActivity"
+                  android:label="@string/recursos_title"></activity>                          
+    </application>
+</manifest>

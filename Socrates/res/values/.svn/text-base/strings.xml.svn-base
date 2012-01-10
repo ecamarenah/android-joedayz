@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="app_name">Socrates</string>
+    
+        
+    <!-- 
+    	Títulos 
+    -->
+    
+    <string name="login_title">Ingreso</string>
+    <string name="aplicaciones_title">Aplicaciones</string>
+    <string name="horario_title">Horarios</string>
+    <string name="busqCursos_title">Selección de ciclo</string>
+    <string name="cursos_title">Notas actuales</string>
+    <string name="notas_title">Detalle de las notas</string>
+    <string name="areas_title">Recursos por área</string>
+    <string name="busqCentroInfo_title">Centro de información</string>
+    <string name="recursos_title">Recursos</string>
+    <string name="mapa_title">Mapa</string>
+    
+    <!--  
+    	Inicio
+    -->
+    
+    <!-- main.xml -->    
+    <string name="usuario_nombre_label">Usuario</string>
+    <string name="usuario_password_label">Password</string>
+    <string name="entrar_label">Entrar</string>    
+    
+    <!-- 
+    	Horarios
+    -->
+    
+    <!--
+    	Notas actuales
+    -->
+    
+    <!-- busq_cursos.xml -->
+    <string name="curso_modalidad_label">Modalidad</string>
+    <string name="curso_ciclo_label">Ciclo</string>
+    
+    <!-- list_header_curso.xml -->   
+    <string name="curso_codigo_header">Código</string> 
+    <string name="curso_nombre_header">Descripción</string>
+    <string name="curso_nota_header">Nota</string>  
+    
+    <!-- list_header_nota.xml -->     
+    <string name="nota_evaluacion_header">Evaluación</string>
+    <string name="nota_peso_header">Peso</string>
+    <string name="nota_valor_header">Nota</string>    
+    
+    <!--
+    	Reserva de recursos
+    -->
+    
+    <!-- busq_centro_info.xml -->
+    <string name="reserva_local_label">Local</string>
+    <string name="reserva_tipoRecurso_label">Tipo de recurso</string>
+    <string name="reserva_numHoras_label">Número de horas</string>
+    <string name="reserva_fecha_label">Fecha de reserva</string>
+    <string name="reserva_hora_label">Hora de reserva</string>
+    <string name="swinstalado_label">Software instalado</string>
+    
+    <!-- list_header_recurso.xml -->    
+    <string name="recurso_codigo_header">Código</string>
+    <string name="recurso_descripcion_header">Descripción</string>
+    <string name="recurso_local_header">Local</string>
+    <string name="recurso_reservado_header">Reservar</string>
+    
+    <!--  
+    	General
+    -->
+    
+    <string name="siguiente_label">Siguiente</string> 
+    <string name="buscar_label">Buscar</string>  
+    
+    <string name="base_uri">http://10.0.2.2:28080/socrates</string>
+</resources>

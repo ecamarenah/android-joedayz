@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"	
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content"
+	android:stretchColumns="0"
+	>	
+   	<TableRow>    	
+		<TextView 
+	       	android:id="@+id/codigoTextView" 
+			style="?Cell"
+			android:width="60dip"
+			/>
+		<TextView 
+	       	android:id="@+id/descripcionTextView" 
+			style="?Cell"	
+			android:width="140dip"
+			/>
+		<TextView 
+	       	android:id="@+id/localTextView" 
+			style="?Cell" 			
+			android:width="50dip"
+			/>
+		<TextView 
+	       	android:id="@+id/reservadoTextView" 
+			style="?Cell" 			
+			android:width="100dip"
+			/>
+	</TableRow>
+</TableLayout>
+

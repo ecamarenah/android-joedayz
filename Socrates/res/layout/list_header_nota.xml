@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"	
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content"	 
+	android:stretchColumns="0"
+	>
+   	<TableRow>   		
+    	<TextView 
+       		android:text="@string/nota_evaluacion_header" 
+			style="?HeaderCell"
+			/>
+		<TextView
+	       	android:text="@string/nota_peso_header"
+			style="?HeaderCell"						
+			android:width="50dip"
+			/>
+		<TextView
+	       	android:text="@string/nota_valor_header"
+			style="?HeaderCell"					
+			android:width="50dip"
+			/>		
+	</TableRow>
+</TableLayout>

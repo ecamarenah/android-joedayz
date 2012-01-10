@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<attr name="View" format="reference" />
+	<attr name="Cell" format="reference" />
+	<attr name="HeaderCell" format="reference" />	
+</resources>

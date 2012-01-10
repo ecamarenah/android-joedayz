@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"	
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content"
+	android:stretchColumns="0"
+	>	
+   	<TableRow>    	
+		<TextView 
+	       	android:id="@+id/codigoTextView" 
+			style="?Cell"
+			/>
+		<TextView 
+	       	android:id="@+id/nombreTextView" 
+			style="?Cell"	
+			android:width="220dip"
+			/>
+		<TextView 
+	       	android:id="@+id/notaTextView" 
+			style="?Cell" 			
+			android:width="40dip"
+			/>
+	</TableRow>
+</TableLayout>
+

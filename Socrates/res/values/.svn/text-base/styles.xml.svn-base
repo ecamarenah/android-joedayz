@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<integer name="theme">0</integer>
+	<dimen name="cell_height">50dip</dimen>
+	<dimen name="cell_height2">25dip</dimen>
+	
+	<!-- Default styles -->
+	
+
+	<style name="View">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+	
+	<style name="View.Cell">		
+		<item name="android:height">@dimen/cell_height</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+	
+	<style name="View.Cell.Header">		
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	<!-- Amadeus styles -->
+
+	<style name="View.2">		
+		<item name="android:typeface">serif</item>
+	</style>
+	
+	<style name="View.Cell.2">		
+		<item name="android:typeface">serif</item>
+	</style>
+	
+	<style name="View.Cell.Header.2">		
+		<item name="android:typeface">serif</item>
+	</style>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:isScrollContainer="true"
+    >
+<TextView
+  	android:text="@string/reserva_local_label"
+  	style="?View"
+  	/>
+<Spinner
+   	android:id="@+id/localSpinner"
+  	style="?View"
+  	/>
+<TextView
+  	android:text="@string/reserva_tipoRecurso_label"
+  	style="?View"
+  	/>
+<Spinner
+   	android:id="@+id/tipoRecursoSpinner"
+  	style="?View"
+  	/>
+<TextView
+  	android:text="@string/reserva_numHoras_label"
+  	style="?View"
+  	/>
+<Spinner
+   	android:id="@+id/horasSpinner"
+  	style="?View"
+  	/>
+<TextView
+  	android:text="@string/reserva_fecha_label"
+  	style="?View"
+  	/>
+<Button 
+	android:id="@+id/fechaButton"
+	style="?View"       	 
+    />
+<TextView
+	android:text="@string/reserva_hora_label"
+   	style="?View"
+   	/>
+<Button 
+	android:id="@+id/horaButton"
+	style="?View"	 
+    />    
+<RelativeLayout
+>
+    <Button
+    	android:id="@+id/buscarButton" 
+        android:text="@string/buscar_label"
+        style="?View"
+        android:layout_width="160dip"        
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+    	/>    
+    <Button 
+    	android:id="@+id/swinstaladoButton"
+        android:text="@string/swinstalado_label"
+        style="?View"
+        android:layout_width="160dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
+</LinearLayout>
