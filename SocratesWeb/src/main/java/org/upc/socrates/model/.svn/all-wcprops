@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/joedayz/Android/!svn/ver/148/SocratesWeb/src/main/java/org/upc/socrates/model
+END
+Nota.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/joedayz/Android/!svn/ver/148/SocratesWeb/src/main/java/org/upc/socrates/model/Nota.java
+END
+Curso.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/joedayz/Android/!svn/ver/148/SocratesWeb/src/main/java/org/upc/socrates/model/Curso.java
+END
+NotaList.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/joedayz/Android/!svn/ver/148/SocratesWeb/src/main/java/org/upc/socrates/model/NotaList.java
+END
+CursoList.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/joedayz/Android/!svn/ver/148/SocratesWeb/src/main/java/org/upc/socrates/model/CursoList.java
+END
+Recurso.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/joedayz/Android/!svn/ver/148/SocratesWeb/src/main/java/org/upc/socrates/model/Recurso.java
+END
+RecursoList.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/joedayz/Android/!svn/ver/148/SocratesWeb/src/main/java/org/upc/socrates/model/RecursoList.java
+END
+Hora.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/joedayz/Android/!svn/ver/148/SocratesWeb/src/main/java/org/upc/socrates/model/Hora.java
+END
+HoraList.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/joedayz/Android/!svn/ver/148/SocratesWeb/src/main/java/org/upc/socrates/model/HoraList.java
+END
