@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrllvwNo1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/MiTema"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dip" >
+
+            <TextView
+                style="@style/Texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombres" />
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:autoText="false" />
+
+            <TextView
+                style="@style/Texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellido Paterno" />
+
+            <EditText
+                android:id="@+id/txtApePat"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:autoText="false" />
+
+            <TextView
+                style="@style/Texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellido Materno" />
+
+            <EditText
+                android:id="@+id/txtApeMat"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:autoText="false" />
+
+            <TextView
+                style="@style/Texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Celular" />
+
+            <EditText
+                android:id="@+id/txtCelular"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:singleLine="true" />
+
+            <TextView
+                style="@style/Texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo Electronico" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:autoText="false" />
+
+            <TextView
+                style="@style/Texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario" />
+
+            <EditText
+                android:id="@+id/txtUsuario"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:autoText="false" />
+
+            <TextView
+                style="@style/Texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clave" />
+
+            <EditText
+                android:id="@+id/txtClave"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:autoText="false"
+                android:password="true" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                style="@style/Boton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/edit"
+                android:onClick="btnAddUser_Click"
+                android:padding="15dip"
+                android:text="Registrar Datos" />
+
+            <Button
+                android:id="@+id/btnRegresar"
+                style="@style/Boton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/undo"
+                android:onClick="btnRegresar_Click"
+                android:padding="15dip"
+                android:text="Regresar" />
+
+            <TextView
+                android:id="@+id/txtEmps"
+                style="@style/Texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numero de Usuarios: " />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
