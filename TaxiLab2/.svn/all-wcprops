@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/joedayz/Android/!svn/ver/92/TaxiLab2
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/joedayz/Android/!svn/ver/91/TaxiLab2/default.properties
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/joedayz/Android/!svn/ver/91/TaxiLab2/AndroidManifest.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/joedayz/Android/!svn/ver/92/TaxiLab2/.project
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/joedayz/Android/!svn/ver/91/TaxiLab2/proguard.cfg
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/joedayz/Android/!svn/ver/92/TaxiLab2/.classpath
+END
