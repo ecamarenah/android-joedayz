@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@android:id/tabhost">
+	<TabWidget android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@android:id/tabs" />
+	<FrameLayout android:id="@android:id/tabcontent"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:paddingTop="60px">
+	</FrameLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@color/background" >
+		
+			<LinearLayout android:orientation="vertical"
+			android:layout_height="fill_parent" android:layout_width="fill_parent"
+			android:layout_gravity="center" android:padding="30dip" style="@style/MiTema">
+			<TextView android:text="@string/main_title"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:layout_gravity="center" android:layout_marginBottom="25dip"
+				android:textSize="24.5sp" style="@style/TituloPrincipal" />
+			<Button android:id="@+id/nosotrosButton" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:drawableLeft="@drawable/home"
+				android:padding="15dip" android:text="@string/nosotrosLabel" style="@style/Boton" />
+			<Button android:id="@+id/serviciosButton"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/cart" android:padding="15dip"
+				android:text="@string/serviciosLabel" style="@style/Boton" />
+			<Button android:id="@+id/tarifasButton" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:drawableLeft="@drawable/buy"
+				android:padding="15dip" android:text="@string/tarifasLabel" style="@style/Boton" />
+			<Button android:id="@+id/sugerenciasButton"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/comment" android:padding="15dip"
+				android:text="@string/sugerenciasLabel" style="@style/Boton" />
+			<Button android:id="@+id/inicioSesionButton"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/user" android:padding="15dip"
+				android:text="@string/inicioSesionLabel" style="@style/Boton" />
+			<Button android:id="@+id/acercaDeButton" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:drawableLeft="@drawable/work"
+				android:padding="15dip" android:text="@string/acercaDeLabel"
+				android:radius="5dp" style="@style/Boton" />
+		</LinearLayout>		
+	</LinearLayout>
+
+</TabHost>

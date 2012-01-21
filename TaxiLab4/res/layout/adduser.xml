@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content">
+<ScrollView 
+android:id="@+id/scrllvwNo1" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"> 
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  style="@style/MiTema"
+  android:padding="30dip"
+  >
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Nombres"
+  style="@style/Texto"
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtName"
+  android:autoText="false"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Apellido Paterno"
+  style="@style/Texto"
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtApePat"
+  android:autoText="false"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Apellido Materno"
+  style="@style/Texto"
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtApeMat"
+  android:autoText="false"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Celular"
+  style="@style/Texto"  
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtCelular"
+  android:inputType="number"
+  android:digits="0123456789"
+  android:singleLine="true"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Correo Electronico"
+  style="@style/Texto"
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtEmail"
+  android:autoText="false"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Usuario"
+  style="@style/Texto"
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtUsuario"
+  android:autoText="false"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Clave"
+  style="@style/Texto"
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtClave"
+  android:autoText="false"
+  android:password="true"
+  />  
+  <Button
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/btnAdd"
+  android:text="Registrar Datos"
+  android:drawableLeft="@drawable/edit"
+  android:padding="15dip" 
+  style="@style/Boton"
+  android:onClick="btnAddUser_Click"
+  />
+  <Button
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/btnRegresar"
+  android:text="Regresar"
+  android:drawableLeft="@drawable/undo"
+  android:padding="15dip" 
+  style="@style/Boton"
+  android:onClick="btnRegresar_Click"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Numero de Usuarios: "
+  android:id="@+id/txtEmps"
+  style="@style/Texto"
+  />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
+

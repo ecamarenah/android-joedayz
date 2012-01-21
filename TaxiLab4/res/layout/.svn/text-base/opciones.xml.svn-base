@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/background" android:layout_height="fill_parent"
+	android:layout_width="fill_parent" android:orientation="horizontal">
+	<LinearLayout android:orientation="vertical"
+		android:layout_height="fill_parent" android:layout_width="fill_parent"
+		android:padding="30dip" style="@style/MiTema" android:layout_gravity="center">
+		<TextView android:text="@string/opciones_title"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_gravity="center" android:layout_marginBottom="25dip"
+			android:textSize="24.5sp" style="@style/TituloPrincipal" />
+		<Button android:id="@+id/solicitarTaxiButton"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/document" android:padding="25dip"
+			style="@style/Boton" android:text="@string/solicitarTaxiLabel" />
+		<Button android:id="@+id/seguimientoReservasButton"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/graph" android:padding="25dip" style="@style/Boton"
+			android:text="@string/seguimientoReservasLabel" />
+		<Button android:id="@+id/rankingTaxisButton"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/star" android:padding="25dip" style="@style/Boton"
+			android:text="@string/rankingTaxisLabel" />
+		<Button android:id="@+id/cerrarSesionButton"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/lock" android:padding="25dip" style="@style/Boton"
+			android:text="@string/cerrarSesionLabel" />
+	</LinearLayout>
+</LinearLayout>
