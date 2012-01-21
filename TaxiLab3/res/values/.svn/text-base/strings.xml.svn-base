@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Taxi Mobile</string>
+	<string name="app_name">Taxi Mobile</string>
+	<string name="main_title">TaxiMobile</string>
+	<string name="nosotrosLabel">Nosotros</string>
+	<string name="serviciosLabel">Servicios</string>
+	<string name="tarifasLabel">Tarifas</string>
+	<string name="sugerenciasLabel">Sugerencias</string>
+	<string name="inicioSesionLabel">Inicio Sesion</string>
+	<string name="acercaDeLabel">Acerca De</string>
+	<string name="nosotros_text">
+		Bienvenidos,\n\n
+		<b>Taxi Mobile</b>
+		es una de las empresas con mayor tiempo en Lima, Perú. Ofrecemos un
+		amplio
+		rango de servicios de taxi y contamos con una amplia flota de vehículos
+		nuevos y cómodos
+		para brindarles la mejor EXPERIENCIA, SEGURIDAD Y PUNTUALIDAD LOS 365 DÍAS
+		DEL AÑO.\n\n
+		Servicios:\n
+		• Taxi Particular\n
+		• Taxi Corporativo\n
+		• Taxi Aeropuerto\n
+		• Taxi por Horas\n
+		• Servicios de Van
+	</string>
+	<string name="nosotros_title">Nosotros</string>
+
+</resources>
+
