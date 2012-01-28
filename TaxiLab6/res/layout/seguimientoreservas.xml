@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_height="fill_parent"
+   android:layout_width="fill_parent"
+   android:orientation="horizontal">
+
+
+
+
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_margin="10dp">
+		<TableRow android:layout_width="fill_parent">
+			<TextView android:id="@+id/cajaReportTitle" android:text="Reporte..."
+				style="@style/xtitle" />
+		</TableRow>
+<!-- 		<TableRow android:layout_width="fill_parent">
+			<RadioGroup android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:id="@+id/RadioGroupReporteTipo">
+				<RadioButton android:checked="true" android:onClick="onClickRB"
+					android:id="@+id/RBOptionReportAll" android:text="Simple" />
+				<RadioButton android:checked="false" android:onClick="onClickRB"
+					android:id="@+id/RBOptionReportOrder" android:text="Agrupado" />
+			</RadioGroup>
+		</TableRow> -->
+	</TableLayout>
+
+    <TableLayout 
+    	android:id="@+id/tableLayoutCajaReport"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_margin="10dp">
+    	
+   	</TableLayout>
+
+
+
+</LinearLayout>

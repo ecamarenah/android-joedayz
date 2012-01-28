@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">TaxiMobile</string>
+    <string name="app_name">TaxiMobile</string>
+    <string name="main_title">TaxiMobile</string>
+    <string name="nosotrosLabel">Nosotros</string>
+    <string name="serviciosLabel">Servicios</string>
+    <string name="tarifasLabel">Tarifas</string>
+    <string name="sugerenciasLabel">Sugerencias</string>
+    <string name="inicioSesionLabel">Inicio Sesion</string>
+    <string name="acercaDeLabel">Acerca De</string>
+    
+    <string name="regresarLabel">Regresar</string>
+    <string name="listarTaxiLabel">Listar Ranking</string>
+    <string name="SelTaxitaLabel">Seleccionar Taxista</string>
+    
+    <string name="opciones_title">Bienvenid@</string>
+    <string name="solicitarTaxiLabel">Solicitar Taxi</string>
+    <string name="seguimientoReservasLabel">Seguimiento de Reservas</string>
+    <string name="rankingTaxisLabel">Ranking de Taxis</string>
+    <string name="preguntasFrecuentesLabel">Preguntas Frecuentes</string>
+    <string name="comentariosLabel">Comentarios / Sugerencias</string>
+    <string name="cerrarSesionLabel">Cerrar Sesion</string>
+    
+    <string name="settings_label">Settings...</string>
+   <string name="settings_title">Sudoku settings</string>
+   <string name="settings_shortcut">s</string>
+   <string name="music_title">Music</string>
+   <string name="music_summary">Play background music</string>
+   <string name="hints_title">Hints</string>
+   <string name="hints_summary">Show hints during play</string>
+   
+   <string name="about_title">Desarrolladores</string>
+   <string name="about_text">• Aldo Reyes\n• Carlos Navarro\n• Paola Rojas</string>
+   
+   <string name="nosotros_title">Nosotros</string>
+   <string name="nosotros_text">Bienvenidos,\n\n
+<b>Taxi Mobile</b> es una de las empresas con mayor tiempo en Lima, Perú. Ofrecemos un amplio 
+rango de servicios de taxi y contamos con una amplia flota de vehículos nuevos y cómodos 
+para brindarles la mejor EXPERIENCIA, SEGURIDAD Y PUNTUALIDAD LOS 365 DÍAS DEL AÑO.\n\n 
+Servicios:\n
+• Taxi Particular\n
+• Taxi Corporativo\n
+• Taxi Aeropuerto\n
+• Taxi por Horas\n
+• Servicios de Van 
+</string>
+
+   <string name="servicios_title">Servicios</string>
+   <string name="servicios_text"><b>• Servicio Particular:</b> Desplazamiento dentro de la zona urbana e interurbana en la ciudad.\n\n 
+<b>• Servicio Corporativo:</b> Atención a empresas y ejecutivos, crédito corporativo.\n\n
+<b>• Servicio Aeropuerto:</b> Atendemos traslados de ingreso y salida del aeropuerto.\n\n
+<b>• Servicio por Hora:</b> Atendemos sus necesidades de dezplazamiento en los tiempos indicados.\n 
+</string>
+
+   <string name="tarifas_title">Tarifas</string>
+   <string name="tarifas_text"><b>Estimados clientes</b>, para poder obtener nuestras tarifas favor de tener en cuenta las siguientes consideraciones:\n\n 
+• Las tarifas de nuestros servicios se pueden consultar por medio de la opción Contáctenos de nuestra página web. Al consultar favor de seleccionar la opción Tarifas y Cotizaciones. Nuestro personal se contactará con Ud. para indicarle el precio del servicio.\n
+• Para atenderlo más rápidamente se deberá brindar el punto de recojo y el de destino así como referencias para llegar a estos puntos.\n
+• Para nuestros clientes empresariales que requieran cotización de servicios favor de indicar aproximadamente la frecuencia de servicios a la semana que requerirán.\n
+• Las tarifas de servicios pueden variar en función del volumen de servicios requeridos. Esto estará sujeto a evaluación previa por parte de Taxi Real.\n
+• Los servicios de recojo del Aeropuerto tienen una espera de cortesía de una hora.\n
+</string>
+   
+</resources>

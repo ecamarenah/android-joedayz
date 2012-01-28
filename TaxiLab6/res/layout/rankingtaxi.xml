@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" android:orientation="vertical"
+style="@style/MiGrid">
+
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:padding="15dip"
+  style="@style/MiGrid"
+  >
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:text="@string/SelTaxitaLabel"/>
+  <Spinner
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:id="@+id/spinTaxista"/>
+  
+  />
+  <TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"  
+  >
+  <TableRow android:id="@+id/TableRow01">
+  </TableRow>
+  <Button android:id="@+id/btnListarTaxi" 
+  android:text="@string/listarTaxiLabel" 
+  android:onClick="btnListarTaxi_Click" 
+  android:layout_width="fill_parent" 
+  android:layout_height="wrap_content"></Button>
+  <TableRow android:id="@+id/TableRow01">
+  </TableRow>
+  </TableLayout>
+  <TextView 
+  android:text="@string/rankingTaxisLabel" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content">
+  </TextView>
+  <ImageView 
+  android:src="@android:drawable/btn_default_small" 
+  android:layout_width="wrap_content" 
+  android:id="@+id/imgvw01" 
+  android:layout_height="wrap_content">
+  </ImageView>
+ 
+</LinearLayout>
+
+<Button
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/btnRegresar"
+  android:text="Regresar"
+  android:drawableLeft="@drawable/undo"
+  android:padding="15dip" 
+  style="@style/Boton"
+  android:onClick="btnRegresar_Click"
+  />
+
+</LinearLayout>
+

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content">
+<ScrollView 
+android:id="@+id/scrllvwNo1" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+style="@style/MiTema"> 
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:padding="15dip"
+  >
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Distrito Origen:"
+  style="@style/Texto"
+  />
+  <Spinner
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/spinDistritoOrigen"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Direccion Origen:"
+  style="@style/Texto"
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtDireccionOrigen"
+  android:autoText="false"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Distrito Destino:"
+  style="@style/Texto"
+  />
+  <Spinner
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/spinDistritoDestino"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Direccion Destino:"
+  style="@style/Texto"
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtDireccionDestino"
+  android:autoText="false"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Correo Auxiliar:"
+  style="@style/Texto"
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtEmailAlterno"
+  android:autoText="false"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Observaciones:"
+  style="@style/Texto"
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtObservaciones"
+  android:autoText="false"
+  android:inputType="textMultiLine"
+  android:gravity="top|left"
+  android:lines="5" 
+  android:scrollHorizontally="false"
+  />
+  <TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"  
+  >
+  <TableRow android:id="@+id/TableRow01">
+  <TextView 
+  android:layout_width="wrap_content"        
+  android:layout_height="wrap_content"        
+  android:text="Fecha Reserva:"
+  android:width="125px"
+  style="@style/Texto"
+  />
+  <EditText 
+  android:id="@+id/dateDisplay"        
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:width="130px"
+  android:editable="false"
+  />
+  <Button android:id="@+id/pickDate"        
+  android:layout_width="fill_parent"        
+  android:layout_height="wrap_content"        
+  android:text="..."
+  />
+  </TableRow>
+  <TableRow android:id="@+id/TableRow01">
+  <TextView 
+  android:layout_width="wrap_content"        
+  android:layout_height="wrap_content"        
+  android:text="Hora:"
+  android:width="125px"
+  style="@style/Texto"
+  />
+  <EditText 
+  android:id="@+id/timeDisplay"        
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:width="130px"
+  android:editable="false"
+  />
+  <Button android:id="@+id/pickTime"        
+  android:layout_width="fill_parent"        
+  android:layout_height="wrap_content"        
+  android:text="..."
+  />
+  </TableRow>
+  </TableLayout>
+  <Button
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/btnSolicitarTaxi"
+  android:drawableLeft="@drawable/edit"    
+  android:padding="15dip"     
+  style="@style/Boton"
+  android:text="Solicitar Taxi"
+  android:onClick="btnSolicitarTaxi_Click"
+  />
+  <Button
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/btnRegresar"
+  android:drawableLeft="@drawable/undo"    
+  android:padding="15dip"     
+  style="@style/Boton"
+  android:text="Regresar"
+  android:onClick="btnRegresar_Click"
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text=""
+  android:id="@+id/txtEmps"
+  style="@style/Texto"
+  /> 
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
+
