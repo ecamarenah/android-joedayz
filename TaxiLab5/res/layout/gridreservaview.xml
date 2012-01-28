@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tab1"
+    style="@style/MiGrid"
+    >
+    <TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5px"
+    >
+    <TableRow>
+    <TextView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:text="Proveedor Taxi"
+    style="@style/TextoGrid2"
+    android:layout_weight="1"
+    />
+    <TextView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:text="Telefono"
+    style="@style/TextoGrid2"
+    android:layout_weight="1"
+    />    
+    </TableRow>
+    </TableLayout> 
+    <GridView
+    android:id="@+id/grid"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:numColumns="1"
+	android:stretchMode="columnWidth"
+	android:verticalSpacing="10dp"    
+	android:horizontalSpacing="10dp"
+    />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"  
+    />
+    <Spinner
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/spinTaxi"
+    android:layout_span="3"
+    />
+    <TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"  
+	/>
+    <Button
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/btnLlamarTaxi"
+	android:text="Llamar Proveedor de Taxi"
+	android:drawableLeft="@drawable/phone"    
+    android:padding="15dip"     
+    style="@style/Boton"
+    android:onClick="btnLlamarTaxi_Click"
+	/>
+    <Button
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/btnRegistrarTaxi"
+	android:text="Registrar Proveedor de Taxi"
+	android:drawableLeft="@drawable/check"    
+    android:padding="15dip"     
+    style="@style/Boton"
+    android:onClick="btnRegistrarTaxi_Click"
+	/>
+	<TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"  
+	/>
+</LinearLayout>
+    
