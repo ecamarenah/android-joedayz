@@ -9,20 +9,20 @@
 	
 	<FrameLayout android:id="@android:id/tabcontent"
 		android:layout_width="fill_parent" android:layout_height="fill_parent"
-		android:paddingTop="60px">
+		android:paddingTop="60dip">
 	</FrameLayout>
-	
-	
 
-	    
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		android:orientation="horizontal" android:layout_width="fill_parent"
-		android:layout_height="fill_parent" android:background="@color/background" >
-		
+
+
+
+		<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@color/background">
+
+
 			<LinearLayout android:orientation="vertical"
-			android:layout_height="fill_parent" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
 			android:layout_gravity="center" android:padding="30dip" style="@style/MiTema">
-			
 			<TextView android:text="@string/main_title"
 				android:layout_height="wrap_content" android:layout_width="wrap_content"
 				android:layout_gravity="center" android:layout_marginBottom="25dip"
@@ -50,6 +50,7 @@
 				android:padding="15dip" android:text="@string/acercaDeLabel"
 				android:radius="5dp" style="@style/Boton" />
 		</LinearLayout>		
-	</LinearLayout>
+	</ScrollView>
+
 
 </TabHost>
