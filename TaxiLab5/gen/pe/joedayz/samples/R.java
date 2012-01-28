@@ -96,21 +96,35 @@ public final class R {
     }
     public static final class string {
         public static final int acercaDeLabel=0x7f050008;
+        public static final int apeMaterno=0x7f050012;
+        public static final int apePaterno=0x7f050011;
         public static final int app_name=0x7f050001;
+        public static final int celular=0x7f050013;
         public static final int cerrarSesionLabel=0x7f05000c;
+        public static final int clave=0x7f050016;
+        public static final int email=0x7f050014;
         public static final int hello=0x7f050000;
         public static final int inicioSesionLabel=0x7f050007;
+        public static final int llamarProveedorTaxi=0x7f05001c;
         public static final int main_title=0x7f050002;
+        public static final int nombres=0x7f050010;
         public static final int nosotrosLabel=0x7f050003;
         public static final int nosotros_text=0x7f050009;
         public static final int nosotros_title=0x7f05000a;
+        public static final int numeroUsuarios=0x7f050019;
         public static final int opciones_title=0x7f05000b;
+        public static final int proveedorTaxi=0x7f05001a;
         public static final int rankingTaxisLabel=0x7f05000d;
+        public static final int registrarDatos=0x7f050017;
+        public static final int registrarProveedorTaxi=0x7f05001d;
+        public static final int regresar=0x7f050018;
         public static final int seguimientoReservasLabel=0x7f05000e;
         public static final int serviciosLabel=0x7f050004;
         public static final int solicitarTaxiLabel=0x7f05000f;
         public static final int sugerenciasLabel=0x7f050006;
         public static final int tarifasLabel=0x7f050005;
+        public static final int telefono=0x7f05001b;
+        public static final int usuario=0x7f050015;
     }
     public static final class style {
         public static final int Boton=0x7f060002;

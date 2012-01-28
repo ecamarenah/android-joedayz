@@ -31,6 +31,22 @@
 	<string name="rankingTaxisLabel">Ranking de Taxis</string>
 	<string name="seguimientoReservasLabel">Seguimiento de Reservas</string>
 	<string name="solicitarTaxiLabel">Solicitar Taxi</string>
+	
+	<string name="nombres">Nombres</string>
+	<string name="apePaterno">Apellido Paterno</string>
+	<string name="apeMaterno">Apellido Materno</string>
+	<string name="celular">Celular</string>
+	<string name="email">Correo Electronico</string>
+	<string name="usuario">Usuario</string>
+	<string name="clave">Clave</string>
+	<string name="registrarDatos">Registrar Datos</string>
+	<string name="regresar">Regresar</string>
+	<string name="numeroUsuarios">Numero de Usuarios: </string>
+	
+	<string name="proveedorTaxi">Proveedor Taxi</string>
+	<string name="telefono">Telefono</string>
+	<string name="llamarProveedorTaxi">Llamar Proveedor de Taxi</string>
+	<string name="registrarProveedorTaxi">Registrar Proveedor de Taxi</string>
 
 </resources>
 
