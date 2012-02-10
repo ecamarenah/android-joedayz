@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="css/jquerymobile.css" />
+        <script src="app/jquery.js"></script>
+        <script src="app/html5formvalidate.js"></script>
+        <script src="app/jquerymobile.js"></script>
+        <script src="app/config.js"></script>
+        <script src="app/app.escribenos.js"></script>
+    </head>
+    <body>
+        <section data-role="page" id="escribenos">
+            <header data-role="header">
+                <a href="index.html" data-icon="back">Atras</a>
+                <h1>Escribenos</h1>
+            </header>
+            <div data-role="content">
+                <fieldset>
+                    <form id="webForm">
+                        <div data-role="fieldcontain">
+                            <label for="txtNombres">Nombres</label>
+                            <input type="text" name="txtNombres" id="txtNombres" required placeholder="Ingrese su Nombre" />
+                        </div>
+                        <div data-role="fieldcontain">
+                            <label for="txtCorreo">Correo</label>
+                            <input type="email" name="txtCorreo" id="txtCorreo" required  placeholder="Ingrese su Correo Electronico"/>
+                        </div>
+                        <div data-role="fieldcontain">
+                            <label for="txtAsunto">Asunto</label>
+                            <input type="text" name="txtAsunto" id="txtAsunto" placeholder="Ingrese el Asunto" required/>
+                        </div>
+                        <div data-role="fieldcontain">
+                            <label for="txtMensaje">Mensaje</label>
+                            <textarea id="txtMensaje" name="txtMensaje" placeholder="Escriba su Mensaje" required ></textarea>
+                        </div>
+                        <div data-role="fieldcontain">
+                            <button data-role="button" id="btnEnviar" type="submit" >Enviar</button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+            <footer data-role="footer">
+                <h4 id="footer">Team Joedayz</h4>
+            </footer>
+        </section>
+        <!-- -->
+        <section id="error" data-role="page">
+            <header data-role="header">
+                <h1>Escribenos</h1>
+            </header>
+            <div data-role="content" style="text-align: center">
+                <h4>Ocurrio un erro al llenar el formulario, por favor revise los siguientes errores.</h4>
+                <a data-role="button" data-rel="back">Regresar</a>
+            </div>
+            <footer data-role="footer">
+                <h4></h4>
+            </footer>
+        </section>
+        <!-- -->
+        <section id="success" data-role="page">
+            <header data-role="header">
+                <h1>Escribenos</h1>
+            </header>
+            <div data-roler="content" style="text-align: center">
+                <h4>Gracias por enviarnos tus sugerencias.</h4>
+                <a data-role="button" href="index.html">Aceptar</a>
+            </div>
+            <footer data-role="footer">
+                <h4></h4>
+            </footer>
+        </section>
+    </body>
+</html>

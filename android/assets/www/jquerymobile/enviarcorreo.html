@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="css/jquerymobile.css" />
+        <script src="app/jquery.js"></script>
+        <script src="app/html5formvalidate.js"></script>
+        <script src="app/jquerymobile.js"></script>
+        <script src="app/config.js"></script>
+        <script src="app/app.miscursos.js"></script>
+    </head>
+    <body>
+        <section data-role="page" id="enviarcorreo">
+            <header data-role="header"><h1>Enviar</h1></header>
+            <div data-role="content">
+                <fieldset>
+                    <form id="webForm">
+                        <div data-role="fieldcontain">
+                            <label for="txtCorreo">Correo</label>
+                            <input type="email" name="txtCorreo" id="txtCorreo" required placeholder="Ingrese su Correo" autocomplete="false" />
+                        </div>
+                        <div data-role="fieldcontain">
+                            <button data-role="button" id="btnEnviarCorreo" type="submit" >Enviar</button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+            <footer data-role="footer" data-position="fixed">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" data-icon="home">Salir</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+    </body>
+</html>

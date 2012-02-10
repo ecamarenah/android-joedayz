@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="css/jquerymobile.css" />
+        <script src="app/jquery.js"></script>
+        <script src="app/jquerymobile.js"></script>
+        <script src="app/config.js"></script>
+        <script src="app/app.miscursos.js"></script>
+    </head>
+    <body>
+        <section data-role="page" id="login">
+            <header data-role="header">
+                <h1>Ingrese</h1>
+            </header>
+            <div data-role="content">
+                <fieldset>
+                    <form id="webForm" action="#">
+                        <div data-role="fieldcontain">
+                            <label for="txtUsuario">Usuario</label>
+                            <input type="text" name="txtUsuario" id="txtUsuario" required placeholder="Ingrese su Usuario" autocomplete="off" />
+                        </div>
+                        <div data-role="fieldcontain">
+                            <label for="txtClave">Contraseña</label>
+                            <input type="password" name="txtClave" id="txtClave" required  placeholder="Ingrese su Password" autocomplete="off" />
+                        </div>
+                        <div data-role="fieldcontain">
+                            <button data-role="button" id="btnAcceso" type="submit" >Enviar</button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+            <footer data-role="footer" data-position="fixed">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#enviarcorreo" data-icon="info">Olvide mi Contraseña</a></li>
+                        <li><a href="index.html" data-icon="home">Salir</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+        <!--  -->
+        <section data-role="page" id="enviarcorreo">
+            <header data-role="header"><h1>Enviar</h1></header>
+            <div data-role="content">
+                <fieldset>
+                    <form id="formEnviarCorreo" action="#">
+                        <div data-role="fieldcontain">
+                            <label for="txtCorreo">Correo</label>
+                            <input type="email" name="txtCorreo" id="txtCorreo" required placeholder="Ingrese su Correo" autocomplete="off" />
+                        </div>
+                        <div data-role="fieldcontain">
+                            <button data-role="button" id="btnEnviarCorreo" type="submit" >Enviar</button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+            <footer data-role="footer" data-position="fixed">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" data-icon="home">Salir</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+        <!-- -->
+        <section data-role="page" id="index" data-url="usuariologin">
+            <header data-role="header"><h1>Bienvenido a la Academia JoeDayz</h1></header>
+            <div data-role="content" id="listIndex">
+                <ul data-role="listview">
+                    <li><a href="#alumno-cursos">Mis Cursos</a></li>
+                    <li><a href="#alumno-notas">Mis Notas</a></li>
+                    <li><a href="#alumno-materiales">Mis Materiales</a></li>
+                    <li><a href="#alumno-mensajes">Mis Mensajes</a></li>
+                </ul>
+            </div>
+            <footer data-role="footer">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a data-icon="gear">Configuracion</a></li>
+                        <li><a data-icon="home">Salir</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+        <!--  -->
+        <section data-role="page" id="alumno-cursos">
+            <header data-role="header"><h1>Mis Cursos</h1></header>
+            <div data-role="content">
+                <ul data-role="listview" id="listIndexCursos"></ul>
+            </div>
+            <footer data-role="footer">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a data-icon="gear">Configuracion</a></li>
+                        <li><a data-icon="home">Salir</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+        <section data-role="page" id="alumno-notas">
+            <header data-role="header"><h1>Mis Notas</h1></header>
+            <div data-role="content">
+                <ul data-role="listview" id="listIndexNotas"></ul>
+            </div>
+            <footer data-role="footer">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a data-icon="gear">Configuracion</a></li>
+                        <li><a data-icon="home">Salir</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+        <section data-role="page" id="alumno-materiales">
+            <header data-role="header"><h1>Mis Materiales</h1></header>
+            <div data-role="content">
+                <ul data-role="listview" id="listIndexMateriales"></ul>
+            </div>
+            <footer data-role="footer">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a data-icon="gear">Configuracion</a></li>
+                        <li><a data-icon="home">Salir</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+        <section data-role="page" id="alumno-mensajes">
+            <header data-role="header"><h1>Mis Mensajes</h1></header>
+            <div data-role="content">
+                <ul data-role="listview" id="listIndexMensajes"></ul>
+            </div>
+            <footer data-role="footer">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a data-icon="gear">Configuracion</a></li>
+                        <li><a data-icon="home">Salir</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+    </body>
+</html>

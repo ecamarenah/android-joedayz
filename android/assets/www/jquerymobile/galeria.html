@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="css/jquerymobile.css" />
+        <script src="app/jquery.js"></script>
+        <script src="app/jquerymobile.js"></script>
+        <script src="app/config.js"></script>
+        <script src='app/plugins/galeria/klass.min.js' type='text/javascript' ></script>
+        <script src='app/plugins/galeria/code.photoswipe.jquery-3.0.4.js' type='text/javascript' ></script>
+        <script src="app/app.galeria.js"></script>
+    </head>
+    <body>
+        <section data-role="page" id="galerias">
+            <header data-role="header" data-position="fixed">
+                <a href="index.html" data-icon="back">Atras</a>
+                <h1>Galeria</h1>
+            </header>
+            <div data-role="content">                
+                <ul data-role="listview" id="listGaleria"></ul>
+            </div>
+            <footer data-role="footer" data-position="fixed">
+                <h4></h4>
+            </footer>
+        </section>
+        <!-- -->
+        <section data-role="page" id="foto" class="gallery-page" data-theme="a">
+            <header data-role="header" data-position="fixed">
+                <a data-icon="back" href="#galerias">Atras</a>
+                <h1>Galeria</h1>
+            </header>
+            <div data-role="content">                
+                <ul class="gallery" id="listFotos"></ul>
+            </div>
+            <footer data-role="footer" data-position="fixed"><h4></h4></footer>
+        </section>
+    </body>
+</html>

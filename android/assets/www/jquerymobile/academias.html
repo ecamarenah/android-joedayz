@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="css/jquerymobile.css" />
+        <script src="app/jquery.js"></script>
+        <script src="app/jquerymobile.js"></script>
+        <script src="app/config.js"></script>
+        <script src="app/app.academias.js"></script>
+    </head>
+    <body>
+        <section data-role="page" id="academias">
+            <header data-role="header" data-fixed="true">
+                <a href="index.html" data-icon="back">Atras</a>
+                <h1>Academias</h1>
+            </header>
+            <div data-role="content">
+                <ul data-role="listview" id="listAcademias">
+                
+                </ul>
+            </div>
+            <footer data-role="footer" data-fixed="true">
+                <h4>Team Joedayz</h4>
+            </footer>
+        </section>    
+        
+        <!-- ACADEMIAS --->
+        <section data-role="page" id="ver">
+            <header data-role="header">
+                <a href="#academias" data-icon="back">Atras</a>
+                <h1 id="header-academia"></h1>
+            </header>
+            <div data-role="content">
+                <ul data-role="listview" id="listCurso"></ul>
+            </div>
+            <footer data-role="footer">
+                <h4>Team Joedayz</h4>
+            </footer>
+        </section>
+        <!-- DETALLE DEL CURSO -->
+        <section data-role="page" id="curso">
+            <header data-role="header">
+                <a href="#ver" data-icon="back">Atras</a>                    
+                <h1 id="header-curso"></h1>
+            </header>
+            <div data-role="content" id="detallercurso">
+            </div>
+            <footer data-role="footer">
+                <h4>Team Joedayz</h4>
+            </footer>
+        </section>
+    </body>
+</html>
