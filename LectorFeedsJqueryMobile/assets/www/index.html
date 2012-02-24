@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lector JoeDayz.org</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="jquery/jquery.mobile-1.0b3.min.css" />
+<script src="jquery/jquery-1.6.2.js"></script>
+<script src="jquery/jquery.mobile-1.0b3.min.js"></script>
+
+
+
+<script type="text/javascript" src="Scripts/jGFeed/jquery.jgfeed-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+
+
+</head>
+<body>
+	<div data-role="page" id="principal">
+		<div data-role="header" data-position="fixed">
+			<h1>JoeDayz.org RSS</h1>
+		</div>
+		<div data-role="content">
+			<ul id="lista" data-role="listview">
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-theme="c">
+				<ul>
+					<li><a href="#" id="refrescar" data-role="button"
+						data-icon="refresh">Refrescar</a></li>
+					<li><a href="#configurar" data-transition="slide"
+						data-role="button" data-icon="gear">Opciones</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="configurar">
+		<div data-role="header">
+			<h1>Opciones</h1>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="slider">Numero de Feeds a Mostrar</label> <br> <input
+				type="range" name="cantidad" id="cantidad" value="1" min="1"
+				max="20" /> <br> <label for="slider">Tiempo de
+				Actualización(min):</label> <br> <input type="range" name="tiempo"
+				id="tiempo" value="1" min="1" max="20" />
+			<p>
+				<label for="slider">Refrescar al Agitar</label> <select name="shake"
+					id="shake" data-role="slider">
+					<option value="off">Off</option>
+					<option value="on">On</option>
+				</select>
+			</p>
+			<p>
+				Aplicación de prueba utilizando JQuery Mobile.<br>
+			</p>
+			<p>
+				Sígueme en twitter <a href="http://twitter.com/joedayz"
+					target="_new">@joedayz</a> y en mi blog, <a
+					href="http://www.joedayz.org" target="_new">www.joedayz.org</a>
+			</p>
+			<p>
+				<a href="#principal" id="volver" data-role="button" data-icon="back">Volver</a>
+			</p>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h1>www.joedayz.pe</h1>
+		</div>
+	</div>
+</body>
+</html>
+
+
+<script type="text/javascript" charset="utf-8">
+	var cantidad = 10;
+	var tiempoRefresco = 15;
+	var watchID = null;
+
+	$(document).ready(function(e) {
+		
+		cargarFeeds(cantidad);
+		document.addEventListener("deviceready", startWatch(), false);
+		
+		setInterval(function() {
+			cargarFeeds(cantidad);
+		}, tiempoRefresco * 60000)
+
+		$("#configurar").bind("pageshow", function() {
+			$("#cantidad").val(cantidad).slider("refresh");
+			$("#tiempo").val(tiempoRefresco).slider("refresh");
+			var shake = $("#shake");
+			if (watchID != null) {
+				shake[0].selectedIndex = 1;
+			} else {
+				shake[0].selectedIndex = 0;
+			}
+			shake.slider("refresh");
+		});
+
+		$("#volver").click(function(e) {
+			cantidad = $("#cantidad").val();
+			tiempoRefresco = $("#tiempo").val();
+			var shake = $("#shake");
+			if (shake[0].selectedIndex == 0) {
+				stopWatch();
+			} else {
+				if (watchID == null) {
+					startWatch();
+				}
+			}
+			cargarFeeds($("#cantidad").val());
+			$.mobile.changePage("#principal", "slide", false, true);
+		});
+
+		$("#refrescar").click(function(e) {
+			cargarFeeds(cantidad);
+		});
+
+	});
+
+	function startWatch() {
+		var options = {
+			frequency : 3000
+		};
+		watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError,
+				options);
+	}
+	function stopWatch() {
+		if (watchID) {
+			navigator.accelerometer.clearWatch(watchID);
+			watchID = null;
+		}
+	}
+
+	function onSuccess(acceleration) {
+		var max = 1;
+		if (Math.abs(acceleration.x) > max || Math.abs(acceleration.y) > max
+				|| Math.abs(acceleration.z) > max) {
+			cargarFeeds(cantidad);
+		}
+	}
+
+	function onError() {
+		alerta('Error al Agitar!', 'JoeDayz.org', 'Aceptar');
+	}
+
+	function alerta(mensaje, titulo, boton) {
+		navigator.notification.alert(mensaje, titulo, boton);
+	}
+
+	function cargarFeeds(cantidad) {
+		try {
+			$.mobile.loadingMessage = "Recuperando Feeds";
+			$.mobile.showPageLoadingMsg('');
+			$.jGFeed('http://www.joedayz.org/web/rss.xml', function(feeds) {
+				if (!feeds) {
+					$.mobile.hidePageLoadingMsg();
+					alerta('Error , no se puede Obtener RSS!', 'JoeDayz.org',
+							'Aceptar');
+					return false;
+				} else {
+					var lista = $('#lista');
+					lista.html("<li data-role='list-divider' data-theme='a'>"
+							+ cantidad + " Post, Actualización :"
+							+ getFechaHora() + "</li>");
+					for ( var i = 0; i < feeds.entries.length; i++) {
+						var entry = feeds.entries[i];
+						var html = "<li>";
+						html += "<a href='"+ entry.link + "'><h3>"
+								+ entry.title + "</h3>";
+						html += "<p><strong>" + entry.author + "</strong> - "
+								+ entry.publishedDate + "</p>";
+						html += "</a></li>";
+						lista.append(html);
+						lista.listview("refresh");
+					}
+					$.mobile.hidePageLoadingMsg();
+				}
+			}, cantidad);
+
+			return true;
+		} catch (err) {
+			alerta('Error , no se puede Obtener RSS!', 'JoeDayz.org', 'Aceptar');
+		}
+	}
+
+	function getFechaHora(fec) {
+		var fec = new Date;
+		var dia = fec.getDate();
+		var mes = fec.getMonth();
+		var anio = fec.getFullYear();
+		var horas = fec.getHours();
+		var minutos = fec.getMinutes();
+		var segundos = fec.getSeconds();
+		if (dia < 10)
+			dia = '0' + dia;
+		if (mes < 10)
+			mes = '0' + mes;
+
+		if (horas < 10)
+			horas = "0" + horas;
+		if (minutos < 10)
+			minutos = "0" + minutos;
+		if (segundos < 10)
+			segundos = "0" + segundos;
+
+		return anio + '/' + mes + '/' + dia + " " + horas + ":" + minutos + ":"
+				+ segundos;
+	}
+</script>
